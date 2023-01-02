@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <!-- 
+        align: 表格对齐 left right center
+        border:有没有边框，1
+     -->
+    <!-- 
+        合并单元格
+        1.跨行合并 rowspan="合并行的行数"
+        2.跨列合并 colspan="合并列的行数"
+        目标单元格
+        跨行：最上侧单元格为目标单元格
+        跨列：最左侧单元格
+      -->
+
+    <table align="center" border="1">
+        <tr>
+            <th>
+                time
+            </th>
+            <th>
+                local
+            </th>
+            <th rowspan="2">
+                character
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                12-00
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

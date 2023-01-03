@@ -6,10 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* this is 后代选择器-- 所有的子孙元素 */
+        ol li {
+            color: red;
+        }
+
+        /* 子选择器- 选择最近一级的子元素 */
+        ul>li {
+            color: green;
+        }
+
+        /* 并集选择器--同时为多组标签定义样式 */
+        div,
+        p {
+            color: aqua;
+        }
+
+        /* 伪类选择器-- : ,有链接伪类，结构伪类 */
+        /* 链接伪类
+           a:link 选择所有未被访问的链接
+           a:visited 选择所有已被访问的链接
+           a:hover 选择鼠标指针位于其上的链接
+           a:active 选择活动链接（鼠标按下不松开的链接）
+        */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: overline;
+        }
+    </style>
 </head>
 
 <body>
-    <!--后代选择器，子选择器，并集选择器，伪类选择器 -->
+    <!--复合选择器包含--后代选择器，子选择器，并集选择器，伪类选择器 -->
+    <!-- compound selector -->
+    <ol>
+        <li>191919</li>
+        <li>191919</li>
+        <li>191919</li>
+    </ol>
+    <ul>
+        <li>322323</li>
+    </ul>
+    <div>99</div>
+    <p>1231</p>
+    <a href="#">1</a> <br>
+    <a href="https://www.baidu.com">2</a><br>
+    <a href="https://www.bing.com">3</a><br>
+    <a href="https://www.google.com">4</a><br>
 </body>
 
 </html>

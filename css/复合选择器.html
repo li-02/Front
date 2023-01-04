@@ -29,6 +29,7 @@
            a:visited 选择所有已被访问的链接
            a:hover 选择鼠标指针位于其上的链接
            a:active 选择活动链接（鼠标按下不松开的链接）
+           顺序不能乱
         */
         a:link {
             color: blue;
@@ -44,6 +45,12 @@
 
         a:active {
             text-decoration: overline;
+        }
+
+        /* focus 伪类选择器--选取获得焦点的表单元素 */
+        /* 焦点就是光标，一般情况<input>类表单元素才能获取 */
+        input:focus {
+            background-color: yellow;
         }
     </style>
 </head>
@@ -65,6 +72,7 @@
     <a href="https://www.baidu.com">2</a><br>
     <a href="https://www.bing.com">3</a><br>
     <a href="https://www.google.com">4</a><br>
+    <input type="text">
 </body>
 
 </html>

@@ -8,25 +8,48 @@
     <title>Document</title>
     <!-- 背景颜色，背景图片，背景平铺，背景图片位置，背景图像固定 -->
     <style>
-        div {
+        body {
             /* 默认是透明 */
             /* background-color: transparent; */
+            background-color: red;
             background-image: url(../image/1.jpeg);
             width: 900px;
-            height: 800px;
+            height: 500px;
             /* repeat: 平铺, no-repeat: 不平铺, repeat-x: 横向平铺, repeat-y: 纵向平铺 */
             background-repeat: no-repeat;
             /* 背景图片位置 */
             /* 可以使用方位名词或精确单位 */
             /* top,center,bottom,left,center,right */
             /* 如果两个都是方位名词,顺序不影响 */
-            background-position: 0 0;
+            /* 如果是精确坐标，第一个一定是x坐标 */
+            /* 若只指定一个数值，则一定是x坐标，另一个默认垂直居中 */
+            background-position: 20px 0;
+            /* 混合单位 */
+            /* 第一个为x坐标，第二个为y坐标 */
+            /* background-position: 20px center; */
+            /* 背景固定 background-attachment 设置背景图像是否固定或者随着页面的其余部分滚动 */
+            /* fixed, scroll */
+            background-attachment: fixed;
+            font-size: 50px;
         }
     </style>
 </head>
 
 <body>
-    <div></div>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+    <p>1124324</p>
+
 </body>
 
 </html>

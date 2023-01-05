@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <!-- 单项数据绑定 -->
+        <input type="text" v-bind:value="name"><br>
+        <!-- 双向数据绑定--一般应用在表单元素上 -->
+        <!-- v-model:value  可以简写为 v-model -->
+        <input type="text" v-model:value="name1">
+    </div>
+    <script>
+        new Vue({
+            el: '#root',
+            // data 的第一种写法 : 对象式
+            data:{
+                name: 'lml',
+                name1: 'lml1'
+            },
+            // 第二种写法: 函数式 , 学组件时只能用这个
+            data:function(){
+                return{
+                    name: 'lml',
+                    name1:'lml1 '
+                }
+            }
+        })
+        // el: 绑定也有第二种写法
+        // v.$mount('#root')
+    </script>
+</body>
+</html>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue1</title>
+    <!--    引入vue-->
     <script src="../vue.js"></script>
 </head>
 
@@ -13,17 +14,25 @@
     <!-- 容器 -->
     <div id="root">
         <h1>hello</h1>
+        <!-- 插值语法 -->
         <h2>{{name}}</h2>
         <h3>{{age}}</h3>
+
+        <!-- 指令语法 -->
+        <!-- 这种写法不可用 -->
+        <!-- <a href="{{url}}"></a> -->
+        <!-- 要采用这种写法,并且 v-bind: 可以简写成 : -->
+        <a v-bind:href="url">点击去百度</a>
     </div>
 
     <script>
         // 创建vue实例,{}里是配置
-        const x = new Vue({
+        const vm = new Vue({
             el: '#root', // 通过这里匹配容器,值一般为css选择器字符串
-            data: { // 供el里的容器使用数据 
+            data: { // 供el里的容器使用数据
                 name: 'lml',
-                age: 11
+                age: 11,
+                url: 'https://www.baidu.com'
             }
         })
 

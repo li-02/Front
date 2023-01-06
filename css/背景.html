@@ -8,7 +8,7 @@
     <title>Document</title>
     <!-- 背景颜色，背景图片，背景平铺，背景图片位置，背景图像固定 -->
     <style>
-        body {
+        .d {
             /* 默认是透明 */
             /* background-color: transparent; */
             background-color: red;
@@ -31,11 +31,21 @@
             /* fixed, scroll */
             background-attachment: fixed;
             font-size: 50px;
+            /* 背景复合写法 , 没有特定的顺序*/
+            /* background: 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置 */
+            
+        }
+        .a{
+            height: 300px;
+            width: 300px;
+            /* 背景颜色半透明 */
+            background: rgba(0,0,0,0.3);
         }
     </style>
 </head>
 
 <body>
+    <div class="d">
     <p>1124324</p>
     <p>1124324</p>
     <p>1124324</p>
@@ -49,7 +59,10 @@
     <p>1124324</p>
     <p>1124324</p>
     <p>1124324</p>
+    </div>
+    <div class="a">
 
+    </div>
 </body>
 
 </html>
